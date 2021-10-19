@@ -7,12 +7,12 @@
 - https://alpha2phi.medium.com/rust-utilities-for-developers-6fb10c488c5
 
 ## IDE
-- language_server(goto_definition ..)
-- search_in_project
-- syntax_highlight
-- auto_complete
-- quick_fix
-- debug
+- language_server(goto_definition ..) : lsp
+- search_in_project : telescope
+- syntax_highlight : lsp-config
+- auto_complete : nvim_cmp
+- quick_fix 
+- debug : dap
 - make, compile
-- unittest_execute
+- unittest_execute :
 
