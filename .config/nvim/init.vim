@@ -15,6 +15,8 @@ Plug 'blueyed/vim-diminactive'
 "Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
 
+Plug 'untitled-ai/jupyter_ascending.vim'
+
 call plug#end()
 
 set splitbelow
@@ -50,6 +52,10 @@ if has('nvim')
   " highlight! link TermCursor Cursor
   highlight! TermCursorNC guibg=red guifg=white ctermbg=1 ctermfg=15
 endif
+
+
+nmap <space><space>x <Plug>JupyterExecute
+nmap <space><space>X <Plug>JupyterExecuteAll
 
 
 " include
