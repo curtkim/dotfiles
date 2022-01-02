@@ -1,8 +1,13 @@
+set number
+set splitbelow
+set splitright
+
 
 call plug#begin('~/.config/nvim/plugged')
 " Make sure you use single quotes
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
+
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'vim-airline/vim-airline'
@@ -21,9 +26,6 @@ Plug 'morhetz/gruvbox'
 Plug 'untitled-ai/jupyter_ascending.vim'
 
 call plug#end()
-
-set splitbelow
-set splitright
 
 color gruvbox
 set background=dark    " Setting dark mode
