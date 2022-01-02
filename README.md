@@ -16,3 +16,7 @@
 - make, compile
 - unittest_execute :
 
+## logging
+### 2022-01-03
+- leader key는 '\'에 해당한다. <leader>ff
+
