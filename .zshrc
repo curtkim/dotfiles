@@ -127,6 +127,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 
+alias kc='kubectl'
 alias co='conan'
 alias dc='docker-compose'
 
