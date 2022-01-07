@@ -25,6 +25,9 @@ Plug 'morhetz/gruvbox'
 
 Plug 'untitled-ai/jupyter_ascending.vim'
 
+" editting
+Plug 'machakann/vim-sandwich'
+
 call plug#end()
 
 color gruvbox
