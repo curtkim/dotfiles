@@ -28,6 +28,8 @@ Plug 'untitled-ai/jupyter_ascending.vim'
 " editting
 Plug 'machakann/vim-sandwich'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 color gruvbox
