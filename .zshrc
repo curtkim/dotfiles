@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/curt/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,7 +77,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	vi-mode
-	zsh-nvm
+	#zsh-nvm
 	docker
 )
 
@@ -127,6 +127,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 
+alias ll='ls -al'
 alias kc='kubectl'
 alias co='conan'
 alias dc='docker-compose'
