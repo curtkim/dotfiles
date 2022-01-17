@@ -1,0 +1,21 @@
+[user]
+	name = curt
+	email = curt.k@kakaomobility.com
+[core]
+	editor = vi
+[alias]
+	st = status -sb
+	di = diff
+    	lg = log --oneline --graph --decorate -20
+    	ch = checkout
+    	cm = commit
+    	br = branch
+[color]
+	ui = true
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
