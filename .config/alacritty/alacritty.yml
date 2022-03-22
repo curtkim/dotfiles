@@ -3,6 +3,9 @@ window:
   decorations: none
 
 # Font configuration
+# font size up :    Ctrl + = 
+# font size down:   Ctrl + -
+# font size reset : Ctrl + 0
 font:
   normal:
     family: Hack Nerd Font
