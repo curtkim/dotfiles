@@ -5,6 +5,10 @@
 ## cli
 - https://towardsdatascience.com/awesome-rust-powered-command-line-utilities-b5359c38692
 - https://alpha2phi.medium.com/rust-utilities-for-developers-6fb10c488c5
+- entr https://github.com/eradman/entr
+  
+    ls *.jx | entr echo 'changed'
+
 
 ## IDE
 - language_server(goto_definition ..) : lsp
