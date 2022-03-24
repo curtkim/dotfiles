@@ -9,6 +9,15 @@
   
     ls *.jx | entr echo 'changed'
 
+## fd usage
+
+    fd jpg
+    fd -e md 		# by extension
+    fd '^x.*rc$'  	# regular expression
+    fd passwd /etc  	# specify directory by second argument	
+
+    sudo apt install fd-find
+    sudo ln -s $(which fdfind) /usr/local/bin/fd
 
 ## IDE
 - language_server(goto_definition ..) : lsp
