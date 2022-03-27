@@ -19,6 +19,11 @@
     sudo apt install fd-find
     sudo ln -s $(which fdfind) /usr/local/bin/fd
 
+## ln
+
+    sudo ln -s $(which xdg-open) /usr/local/bin/open
+
+
 ## IDE
 - language_server(goto_definition ..) : lsp
 - search_in_project : telescope
