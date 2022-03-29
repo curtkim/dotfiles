@@ -23,6 +23,9 @@
 
     sudo ln -s $(which xdg-open) /usr/local/bin/open
 
+## ubuntu gnoe extension
+- https://extensions.gnome.org/extension/657/shelltile/
+
 
 ## IDE
 - language_server(goto_definition ..) : lsp
