@@ -38,8 +38,8 @@ nnoremap <TAB> :action PreviousTab<CR>
 nnoremap <s-TAB> :action NextTab<CR>
 nnoremap <Leader>en :action EditSourceInNewWindow<CR>
 nnoremap <Leader>n :action NextWindow<CR>
-"nnoremap <Leader>q :action CloseContent<CR>
-nnoremap <Leader>qa :action CloseAllEditors<CR>
+"/HideActiveWindow
+
 
 """ Editing source code
 set ideajoin
@@ -48,27 +48,31 @@ set idearefactormode=keep
 "vnoremap > >gv
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
-nnoremap ri :action CollapseRegion<CR>
-nnoremap ro :action ExpandRegion<CR>
-nnoremap ria :action CollapseAllRegions<CR>                     "region out all
-nnoremap roa :action ExpandAllRegions<CR>
+nnoremap zi :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap zia :action CollapseAllRegions<CR>
+nnoremap zoa :action ExpandAllRegions<CR>
 "nnoremap <leader>c :action CommentByLineComment<CR>
 "nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
-nnoremap <Leader>=  :action ReformatCode<CR>
+nnoremap <Leader>r  :action ReformatCode<CR>
+" o를 누르면 다음줄 삽입이 발생한다.
 "nnoremap <leader>o :action OptimizeImports<CR>
 ""nnoremap <c-r> :action RecentFiles<CR>
 "nnoremap <leader>l :action RecentLocations<CR>
 "nnoremap <leader>h  :action LocalHistory.ShowHistory<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap gE :action GotoPreviousError<CR>
-"nnoremap <leader>s :write<CR>
+
+
 
 """ Searching and Source Code Navigation
 set incsearch
-"nnoremap <c-/> :action FindInPath<CR>
+nnoremap <c-/> :action FindInPath<CR>
 "nnoremap <c-a> :action GotoAction<CR>
 "nnoremap <c-f> :action GotoFile<CR>
-"nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>q :action QuickJavaDoc<CR>
+nnoremap <leader>p :action ParameterInfo<CR>
 "nnoremap <leader>s :action GotoRelated<CR>
 "nnoremap <leader>h :action CallHierarchy<CR>
 "nnoremap <leader>b :action ShowNavBar<CR>
@@ -87,18 +91,19 @@ nnoremap gf :action Forward<CR>
 "nnoremap <c-x> :action HideAllWindows<CR>
 
 """ Running and Debugging
-nnoremap ,c :action editRunConfigurations<CR>      "run config
-nnoremap ,r :action ContextRun<CR>
-nnoremap ,rc :action RunClass<CR>
-nnoremap ,s :action ChooseRunConfiguration<CR>     "run select
-nnoremap ,t :action ActivateRunToolWindow<CR>
-nnoremap ,u :action Rerun<CR>
-nnoremap ,f :action RerunFailedTests<CR>
-
-nnoremap ,b :action ToggleLineBreakpoint<CR>
-nnoremap ,d :action ContextDebug<CR>
-nnoremap ,n :action ActivateDebugToolWindow<CR>
-
+"nnoremap he :action editRunConfigurations<CR>
+"nnoremap hh :action ChooseRunConfiguration<CR>
+"
+"nnoremap hr :action Run<CR>
+""nnoremap ,rc :action RunClass<CR>
+"nnoremap har :action ActivateRunToolWindow<CR>
+"nnoremap hu :action Rerun<CR>
+""nnoremap ,f :action RerunFailedTests<CR>
+"
+"nnoremap hb :action ToggleLineBreakpoint<CR>
+"nnoremap hd :action Debug<CR>
+"nnoremap had :action ActivateDebugToolWindow<CR>
+"nnoremap hs :action Stop<CR>
 
 " ========================================================================
 " plugins
