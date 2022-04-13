@@ -8,6 +8,9 @@
 - entr https://github.com/eradman/entr
   
     ls *.jx | entr echo 'changed'
+- tldr
+- zoxide
+
 
 ## fd usage
 
