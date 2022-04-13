@@ -1,6 +1,8 @@
 ""
 " Shift + Escape : Hide Active Tool Window
 
+set relativenumber
+set number
 
 " ========================================================================
 " Setting
@@ -34,8 +36,8 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <TAB> :action PreviousTab<CR>
-nnoremap <s-TAB> :action NextTab<CR>
+nnoremap <s-TAB> :action PreviousTab<CR>
+nnoremap <TAB> :action NextTab<CR>
 nnoremap <Leader>en :action EditSourceInNewWindow<CR>
 nnoremap <Leader>n :action NextWindow<CR>
 "/HideActiveWindow
@@ -52,7 +54,7 @@ nnoremap zi :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 nnoremap zia :action CollapseAllRegions<CR>
 nnoremap zoa :action ExpandAllRegions<CR>
-"nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
 "nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Leader>r  :action ReformatCode<CR>
 " o를 누르면 다음줄 삽입이 발생한다.
@@ -91,19 +93,19 @@ nnoremap gf :action Forward<CR>
 "nnoremap <c-x> :action HideAllWindows<CR>
 
 """ Running and Debugging
-"nnoremap he :action editRunConfigurations<CR>
-"nnoremap hh :action ChooseRunConfiguration<CR>
-"
-"nnoremap hr :action Run<CR>
+nnoremap ,e :action editRunConfigurations<CR>
+nnoremap ,c :action ChooseRunConfiguration<CR>
+
+nnoremap ,r :action Run<CR>
 ""nnoremap ,rc :action RunClass<CR>
-"nnoremap har :action ActivateRunToolWindow<CR>
+nnoremap ,ar :action ActivateRunToolWindow<CR>
 "nnoremap hu :action Rerun<CR>
 ""nnoremap ,f :action RerunFailedTests<CR>
-"
-"nnoremap hb :action ToggleLineBreakpoint<CR>
-"nnoremap hd :action Debug<CR>
-"nnoremap had :action ActivateDebugToolWindow<CR>
-"nnoremap hs :action Stop<CR>
+
+nnoremap ,b :action ToggleLineBreakpoint<CR>
+nnoremap ,d :action Debug<CR>
+nnoremap ,ad :action ActivateDebugToolWindow<CR>
+nnoremap ,s :action Stop<CR>
 
 " ========================================================================
 " plugins
