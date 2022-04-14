@@ -13,7 +13,7 @@
     ls *.jx | entr echo 'changed'
 - tldr
 - zoxide
-
+- gitui
 
 ## fd usage
 
