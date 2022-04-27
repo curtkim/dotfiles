@@ -75,6 +75,7 @@ nnoremap <c-/> :action FindInPath<CR>
 nnoremap <leader>u :action FindUsages<CR>
 nnoremap <leader>q :action QuickJavaDoc<CR>
 nnoremap <leader>p :action ParameterInfo<CR>
+nnoremap <leader>s :action ShowErrorDescription<CR>
 "nnoremap <leader>s :action GotoRelated<CR>
 "nnoremap <leader>h :action CallHierarchy<CR>
 "nnoremap <leader>b :action ShowNavBar<CR>
@@ -96,13 +97,14 @@ nnoremap gf :action Forward<CR>
 nnoremap ,e :action editRunConfigurations<CR>
 nnoremap ,c :action ChooseRunConfiguration<CR>
 
+nnoremap ,bp :action BuildProject<CR>
 nnoremap ,r :action Run<CR>
 ""nnoremap ,rc :action RunClass<CR>
 nnoremap ,ar :action ActivateRunToolWindow<CR>
 "nnoremap hu :action Rerun<CR>
 ""nnoremap ,f :action RerunFailedTests<CR>
 
-nnoremap ,b :action ToggleLineBreakpoint<CR>
+nnoremap ,tp :action ToggleLineBreakpoint<CR>
 nnoremap ,d :action Debug<CR>
 nnoremap ,ad :action ActivateDebugToolWindow<CR>
 nnoremap ,s :action Stop<CR>

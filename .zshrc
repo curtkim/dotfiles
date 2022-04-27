@@ -136,9 +136,9 @@ export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 export PATH=$PATH:$CUDA_HOME/bin
 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #source /home/curt/vulkan/1.2.176.1/setup-env.sh
 
@@ -164,3 +164,4 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 eval "$(zoxide init zsh)"
 
+export PATH=$PATH:/usr/local/TensorRT-8.2.3.0/bin
