@@ -69,7 +69,7 @@ nnoremap gE :action GotoPreviousError<CR>
 
 """ Searching and Source Code Navigation
 set incsearch
-nnoremap <c-/> :action FindInPath<CR>
+nnoremap <leader>/ :action FindInPath<CR>
 "nnoremap <c-a> :action GotoAction<CR>
 "nnoremap <c-f> :action GotoFile<CR>
 nnoremap <leader>u :action FindUsages<CR>
