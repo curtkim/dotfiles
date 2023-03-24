@@ -26,5 +26,6 @@ font:
 key_bindings:
   - { key: V,              mods: Alt,                    action: Paste                 }
   - { key: C,              mods: Alt,                    action: Copy                  }
-
+  - { key: B,              mods: Control,                chars: "\x1BB"                }
+  - { key: W,              mods: Control,                chars: "\x1BF"                }
 
